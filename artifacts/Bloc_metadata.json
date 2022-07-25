@@ -16,8 +16,8 @@
 				],
 				"name": "addTask",
 				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
+				"payable": true,
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -125,10 +125,10 @@
 	},
 	"sources": {
 		"bloc.sol": {
-			"keccak256": "0xa9fd63cd2c8d6af3b54d8ec270492b6ec19dfab1aaf863e6582204bcf15dcf2e",
+			"keccak256": "0xe33cb7798f3564dddf13c4fd9bc050e15e6ef465f38d777489ebfd36da097c6f",
 			"urls": [
-				"bzz-raw://19fe1da1b54d9cab875e8c0f7ba2bb8c5914d4ebbdd47413160a8e9c5d2927cf",
-				"dweb:/ipfs/QmaWCReutHno3jaF9gvXLijeEYhSHqKW96TJNHu7hjT3Y1"
+				"bzz-raw://1f0b156916eeccaec5062e94ce3e8cc80402174e54714722c87881693c4a223f",
+				"dweb:/ipfs/QmP2k9L5fHJ5rNFzBKhhXYMVa36P1nMYWxqz6hdd2ryjZC"
 			]
 		}
 	},

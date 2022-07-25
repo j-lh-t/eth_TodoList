@@ -10,8 +10,8 @@ let contractABI = [
         ],
         name: "addTask",
         outputs: [],
-        payable: false,
-        stateMutability: "nonpayable",
+        payable: true,
+        stateMutability: "payable",
         type: "function",
     },
     {
@@ -100,4 +100,4 @@ let contractABI = [
 ];
 
 //Chỉnh theo contract Deployed on Remix IDE
-let contractAddress = "0x28a3E5A6c22a6C64E1ffbFDDd3B334469d409B72";
+let contractAddress = "0x41130598C7bbf3427e3ba48E604F19444D1D00F0";

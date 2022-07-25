@@ -1,4 +1,4 @@
-pragma solidity ^0.5.1;
+pragma solidity >=0.5.1;
 pragma experimental ABIEncoderV2;
 
 // Creating a contract
@@ -15,12 +15,17 @@ bool isDone;
 mapping (address => Task[]) private Users;
 	
 // Defining function to add a task
-function addTask(string calldata _task) external
+function addTask(string memory _task) public payable
 {
-Users[msg.sender].push(Task({
-	task:_task,
-	isDone:false
-	}));
+	Users[msg.sender].push(Task({
+		task:_task,
+		isDone:false
+		}));
+
+	// Fetch the author
+	address payable _author = msg.sender;
+	// Pay the author by sending them Ether
+	address(_author).transfer(msg.value);
 }
 
 // Defining a function to get details of a task
