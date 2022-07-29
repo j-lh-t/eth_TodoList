@@ -1,21 +1,18 @@
 let contractABI = [
     {
-        constant: false,
         inputs: [
             {
                 internalType: "string",
-                name: "_task",
+                name: "_name",
                 type: "string",
             },
         ],
         name: "addTask",
         outputs: [],
-        payable: true,
         stateMutability: "payable",
         type: "function",
     },
     {
-        constant: false,
         inputs: [
             {
                 internalType: "uint256",
@@ -25,12 +22,10 @@ let contractABI = [
         ],
         name: "deleteTask",
         outputs: [],
-        payable: false,
         stateMutability: "nonpayable",
         type: "function",
     },
     {
-        constant: true,
         inputs: [
             {
                 internalType: "uint256",
@@ -44,7 +39,7 @@ let contractABI = [
                 components: [
                     {
                         internalType: "string",
-                        name: "task",
+                        name: "name",
                         type: "string",
                     },
                     {
@@ -58,14 +53,12 @@ let contractABI = [
                 type: "tuple",
             },
         ],
-        payable: false,
         stateMutability: "view",
         type: "function",
     },
     {
-        constant: true,
         inputs: [],
-        name: "getTaskCount",
+        name: "taskCount",
         outputs: [
             {
                 internalType: "uint256",
@@ -73,12 +66,10 @@ let contractABI = [
                 type: "uint256",
             },
         ],
-        payable: false,
         stateMutability: "view",
         type: "function",
     },
     {
-        constant: false,
         inputs: [
             {
                 internalType: "uint256",
@@ -93,11 +84,10 @@ let contractABI = [
         ],
         name: "updateStatus",
         outputs: [],
-        payable: false,
         stateMutability: "nonpayable",
         type: "function",
     },
 ];
 
 //Chỉnh theo contract Deployed on Remix IDE
-let contractAddress = "0x41130598C7bbf3427e3ba48E604F19444D1D00F0";
+let contractAddress = "0xe6c56d309F769941890dF6aBA22C1b69FD4639A8";

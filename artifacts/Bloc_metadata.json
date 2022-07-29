@@ -1,27 +1,24 @@
 {
 	"compiler": {
-		"version": "0.5.17+commit.d19bba13"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_task",
+						"name": "_name",
 						"type": "string"
 					}
 				],
 				"name": "addTask",
 				"outputs": [],
-				"payable": true,
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -31,12 +28,10 @@
 				],
 				"name": "deleteTask",
 				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"constant": true,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -50,7 +45,7 @@
 						"components": [
 							{
 								"internalType": "string",
-								"name": "task",
+								"name": "name",
 								"type": "string"
 							},
 							{
@@ -64,14 +59,12 @@
 						"type": "tuple"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": true,
 				"inputs": [],
-				"name": "getTaskCount",
+				"name": "taskCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -79,12 +72,10 @@
 						"type": "uint256"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -99,24 +90,30 @@
 				],
 				"name": "updateStatus",
 				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"bloc.sol": "Bloc"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -125,10 +122,11 @@
 	},
 	"sources": {
 		"bloc.sol": {
-			"keccak256": "0xe33cb7798f3564dddf13c4fd9bc050e15e6ef465f38d777489ebfd36da097c6f",
+			"keccak256": "0x73a1f477a98634fd0e105607bc35601eb71e446577edef563e4dee5eaea0d3fc",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://1f0b156916eeccaec5062e94ce3e8cc80402174e54714722c87881693c4a223f",
-				"dweb:/ipfs/QmP2k9L5fHJ5rNFzBKhhXYMVa36P1nMYWxqz6hdd2ryjZC"
+				"bzz-raw://b8153921455b28f9df8ff72e5b9b1d3cb9384207c39b9203ee70e92cba21691f",
+				"dweb:/ipfs/Qmcn3yEy2E8y7nwcRz8q619VzShyDn1q86W8H9sXH1zzbU"
 			]
 		}
 	},

@@ -1,16 +1,16 @@
 body{
     text-align: center;
+    background-color: #bbb;
 }
 .card-container {
     width: 300px;
     height: 500px;
     background: #2699FB;
-    border: 1px solid #2699FB;
-    border-radius: 10px;
-    opacity: 1;
+    border: 5px solid #2699FB;
+    border-radius: 25px;
+   
     margin-right: auto;
     margin-left: auto;
-    border-left: 0;
 }
 
 .icon-circle {
@@ -34,9 +34,9 @@ body{
 .task-card {
     width: 300px;
     height: 325px;
-    border: 1px solid #FFFFFF;
+    border: 5px solid #2699FB;
     background: #FFFFFF;
-    border-radius: 25px 25px 10px 10px;
+    border-radius: 25px 25px 25px 25px;
     opacity: 1;
     position: relative;
 }

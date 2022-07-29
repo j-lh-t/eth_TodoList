@@ -23,7 +23,7 @@ async function createTaskList() {
             let p_acc = document.getElementById("p_acc");
             p_acc.innerText = await getAccount();
             numberOfTask = await contract.methods
-                .getTaskCount()
+                .taskCount()
                 .call({ from: web3.eth.defaultAccount });
             /* The actual number of task may differ because
 				when an task is removed the task element is
@@ -96,8 +96,8 @@ function addTaskToList(id, name, status) {
 
     /* Create a button to delete
      */
-    var button = document.createElement("button");
-
+    var button = document.createElement("BUTTON");
+    button.setAttribute("type", "button");
     button.setAttribute("id", "item-" + id + "-button");
     button.setAttribute("value", " - ");
     /* Create a checkbox and set its id and checked
@@ -237,7 +237,7 @@ async function addTask(name) {
         form.classList.remove("was-validated");
         // Get the number of task from blockchain //
         contract.methods
-            .getTaskCount()
+            .taskCount()
             .call({ from: web3.eth.defaultAccount })
             .then(
                 (numberOfTask) => {
